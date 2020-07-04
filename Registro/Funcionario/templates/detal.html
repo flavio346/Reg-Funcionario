@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title%}Dados do Funcionario{% endblock%}
+
+{% block main%}
+<h1 style="color:black">Detalhes</h1>
+<hr>
+    Nome : {{object.Nome}}<br>
+    Cpf : {{object.Cpf}}<br>
+    Idade : {{object.Idade}}<br>
+    Data de Nascimento : {{object.Data_de_Nascimento}}<br>
+    Telefone : {{object.Telefone}}<br>
+    Email : {{object.Email}}<br>
+
+
+
+
+
+<footer><h3>Data : {{ now }}</h3></footer>
+
+
+
+{% endblock %}

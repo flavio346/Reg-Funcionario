@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title%}Deletar{% endblock %}
+
+{% block main %}
+<form method="post">
+    {% csrf_token %}
+    <p>Voçe Tem Certeza Que Deseja Deletar "{{ object.Nome }}" ?</p>
+    <input type="submit" value="Deletar"  class="btn btn-danger">
+</form>
+
+{% endblock %}

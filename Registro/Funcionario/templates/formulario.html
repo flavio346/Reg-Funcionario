@@ -1,0 +1,16 @@
+{% extends 'base.html '%}
+{% load bootstrap %}
+{% block title %}Novo Funcionario{% endblock%}
+{% block main %}
+<h1 style="color:black">Formulario</h1>
+<hr>
+<br>
+<form method="post">
+    {% csrf_token %}
+    <span class="font-weight-bold">{{ form|bootstrap}}</span>
+    <button type="submit" class="btn btn-outline-primary" >Salvar</button>
+
+</form>
+
+
+{% endblock %}
